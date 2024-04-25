@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Model Prediction Interface</title>
+</head>
+<body>
+    <h2>Input Features for Prediction</h2>
+    <form action="/predict" method="post">
+        <label for="model">Choose a model:</label>
+        <select name="model" id="model">
+            <option value="lr">Logistic Regression Model</option>
+            <option value="model2">Model 2</option>
+            <!-- Add other models as needed -->
+        </select><br><br>
+
+        <label for="age_group">Choose Age Group:</label>
+        <select name="age_group" id="age_group">
+            <option value="0-9">0-9 Years</option>
+            <option value="10-19">10-19 Years</option>
+            <option value="20-29">20-29 Years</option>
+            <option value="30-39">30-39 Years</option>
+            <option value="40-19">40-19 Years</option>
+            <option value="50-59">50-59 Years</option>
+            <option value="60-69">10-19 Years</option>
+            <option value="70-79">10-19 Years</option>
+            <option value="80">80+ Years</option>
+            <!-- Add other age groups as needed -->
+        </select><br><br>
+
+        <label for="sex">Choose Sex Group:</label>
+        <select name="sex" id="sex">
+            <option value="female">Female</option>
+            <option value="male">Male</option>
+            <option value="other">Other</option>
+            <!-- Add other ethnic groups as needed -->
+        </select><br><br>
+
+        <label for="ethnicity">Choose Ethnicity:</label>
+        <select name="ethnicity" id="ethnicity">
+            <option value="American Indian/Alaska Native, Non-Hispanic">American Indian/Alaska Native, Non-Hispanic</option>
+            <option value="Asian, Non-Hispanic">Asian, Non-Hispanic</option>
+            <option value="Black, Non-Hispanic">Black, Non-Hispanic</option>
+            <option value="Multiple/Other, Non-Hispanic">Multiple/Other, Non-Hispanic</option>
+            <option value="Native Hawaiian/Other Pacific Islander, Non-Hispanic">Native Hawaiian/Other Pacific Islander, Non-Hispanic</option>
+            <option value="White, Non-Hispanic">White, Non-Hispanic</option>
+            <option value="Hispanic/Latino">Hispanic/Latino</option>
+            <!-- Add other ethnic groups as needed -->
+        </select><br><br>
+
+        <label for="current_status">Choose Case Status:</label>
+        <select name="current_status" id="current_status">
+            <option value="Laboratory-confirmed">Laboratory Confirmed</option>
+            <option value="Probable">Probable</option>
+        </select><br><br>
+
+        <label for="hospital_yn">Hospitalized Condition:</label>
+        <select name="hospital_yn" id="hospital_yn">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="icu_yn">ICU Condition:</label>
+        <select name="icu_yn" id="icu_yn">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <label for="medcond_yn">Pre-exisiting Medical Condition:</label>
+        <select name="medcond_yn" id="medcond_yn">
+            <option value="yes">Yes</option>
+            <option value="no">No</option>
+        </select><br><br>
+
+        <button type="submit">Predict</button>
+    </form>
+    {% if prediction_text %}
+        <h3>{{ prediction_text }}</h3>
+    {% endif %}
+</body>
+</html>
