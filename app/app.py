@@ -7,8 +7,8 @@ from logreg import LogisticRegressionModel
 app = Flask(__name__)
 
 # Load the model
-device = torch.device("cpu")
-model = pickle.load(open('model_lr.pkl', 'rb')).to(device)
+model = pickle.load(open('model_lr.pkl', 'rb'))
+
 
 case_status_mapping = {
     "Laboratory-confirmed": [1, 0],
@@ -67,8 +67,8 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     # model = request.form['model']
-    model_name = request.form['model']
-    model = pickle.load(open(f'model_{model_name}.pkl', 'rb')).to(device)
+    # model_name = request.form['model']
+    # model = pickle.load(open(f'model_{model_name}.pkl', 'rb')).to(device)
     case_status = case_status_mapping[request.form['current_status']]
     sex_group = sex_group_mapping[request.form['sex']]
     age_group = age_group_mapping[request.form['age_group']]
