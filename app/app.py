@@ -1,14 +1,15 @@
 from flask import Flask, request, jsonify, render_template
+from waitress import serve
 import pickle
 import numpy as np
 import torch
+import torch.nn as nn
 from logreg import LogisticRegressionModel
 
 app = Flask(__name__)
 
 # Load the model
-model = pickle.load(open('model_lr.pkl', 'rb'))
-
+model = pickle.load(open('app/model_lr.pkl', 'rb'))
 
 case_status_mapping = {
     "Laboratory-confirmed": [1, 0],
@@ -85,5 +86,7 @@ def predict():
     
     return render_template('index.html', prediction_text='Probability of event: {:.4f}'.format(output))
 
+
 if __name__ == "__main__":
-    app.run(debug=True)
+    #app.run(debug=True)
+    serve(app, host="0.0.0.0", port=8080)
