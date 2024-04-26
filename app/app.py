@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from logreg import LogisticRegressionModel
+from randomforest import RandomForestModel
 import os
 
 app = Flask(__name__)
@@ -82,8 +83,13 @@ def predict():
     input_features = np.array(case_status + sex_group + age_group + ethnicity_group + hospital_yn + icu_yn + medcond_yn)
     input_tensor = torch.FloatTensor(input_features).unsqueeze(0)
     with torch.no_grad():  # Ensure no gradients are computed during inference
-        prediction = model(input_tensor)
-        output = prediction.numpy()[0][0]
+        if(model_name == 'lr'):
+            prediction = model(input_tensor)
+            output = prediction.numpy()[0][0]
+        else:
+            prediction = model.predict(torch.FloatTensor(input_features))
+            output = prediction
+
     
     return render_template('index.html', prediction_text='Probability of event: {:.4f}'.format(output))
 
