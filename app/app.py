@@ -69,8 +69,8 @@ def home():
 @app.route('/predict', methods=['POST'])
 def predict():
     # model = request.form['model']
-    # model_name = request.form['model']
-    # model = pickle.load(open(f'model_{model_name}.pkl', 'rb')).to(device)
+    model_name = request.form['model']
+    model = pickle.load(open(f'app/model_{model_name}.pkl', 'rb'))
     case_status = case_status_mapping[request.form['current_status']]
     sex_group = sex_group_mapping[request.form['sex']]
     age_group = age_group_mapping[request.form['age_group']]
