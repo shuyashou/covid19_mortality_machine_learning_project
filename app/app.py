@@ -5,6 +5,7 @@ import numpy as np
 import torch
 import torch.nn as nn
 from logreg import LogisticRegressionModel
+import os
 
 app = Flask(__name__)
 
@@ -88,5 +89,5 @@ def predict():
 
 
 if __name__ == "__main__":
-    #app.run(debug=True)
-    serve(app, host="0.0.0.0", port=8080)
+    port = int(os.environ.get("PORT", 5000)) 
+    serve(app, host="0.0.0.0", port=port)
