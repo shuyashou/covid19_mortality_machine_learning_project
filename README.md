@@ -7,6 +7,17 @@ List the deliverables from your project proposal. For each uncompleted deliverab
 
 If you spent substantial time on any aspects that weren't deliverables in your proposal, please list those under "Additional Work" and indicate where in the notebook you discuss them.
 
+> [!NOTE]
+> **Deliverables Adjustments:**
+> 
+> - **"Must complete #2":** Implementation and evaluation of logistic regression, Random Forest, SVM, XGBoost, and AdaBoost models in predicting COVID-19 outcomes.
+>   - After discussing with our TA, 
+> 
+> 3. **"Must complete #3":** Data visualization of COVID-19 trends over time using matplotlib and seaborn libraries.
+> 
+> 4. **"Must complete #4":** Documentation of model performance metrics and findings in a detailed report.
+
+
 ### Uncompleted Deliverables
 1. "Expect to complete #2": we decided to use an existing implementation for our SVM
 2. "Would like to accomplish #2": Collaboration with healthcare professionals (e.g., Johns Hopkins Medicine) for model validation and refinement alongside medical expertise that may be of significance for our findings. In addition to healthcare professionals, outreach to the authors that inspired our project topic (cited as [1]) to discuss our findings and methodologies.
