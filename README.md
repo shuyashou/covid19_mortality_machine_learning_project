@@ -9,15 +9,18 @@ If you spent substantial time on any aspects that weren't deliverables in your p
 
 ### Uncompleted Deliverables
 1. "Expect to complete #2": we decided to use an existing implementation for our SVM
-2. ...
-
+2. "Would like to accomplish #2": Collaboration with healthcare professionals (e.g., Johns Hopkins Medicine) for model validation and refinement alongside medical expertise that may be of significance for our findings. In addition to healthcare professionals, outreach to the authors that inspired our project topic (cited as [1]) to discuss our findings and methodologies.
+3. "Would like to accomplish #3": Submit research findings in a peer-reviewed journal and/or present them at relevant conferences and forums to share insights and contribute to the collective understanding of COVID-19 dynamics.
 
 ### Completed Deliverables
-1. "Must complete #1": We discuss our dataset pre-processing [in "Dataset" below](#scrollTo=zFq-_D0khnhh&line=10&uniqifier=1).
-2. "Must complete #2": We discuss training our logistic regression baseline [in "Baselines" below](#scrollTo=oMyqHUa0jUw7&line=5&uniqifier=1).
-3. ...
+1. "Must complete #1": Development of a data preprocessing pipeline tailored to the CDC COVID-19 dataset.
+2. "Must complete #2": Implementation and evaluation of logistic regression, Random Forest, SVM, XGBoost, and AdaBoost models in predicting COVID-19 outcomes.
+3. "Must complete #3": Analysis of our various models, and their results in identifying the key contributors to mortality due to Covid-19.
+4. "Expect to accomplish": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
+5. "Expect to accomplish #1": Explore techniques such as SHAP (SHapley Additive exPlanations) values, partial dependence plots, and permutation importance to gain deeper understanding of feature contributions.
+6. "Expect to accomplish #3": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
 
 
 ### Additional Deliverables
-1. We decided to add a second baseline using the published model from this paper. We discuss this [in "Baselines" below](#scrollTo=oMyqHUa0jUw7&line=5&uniqifier=1).
-2. ...
+1. 
+2. 
