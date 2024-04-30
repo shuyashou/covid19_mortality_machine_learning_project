@@ -55,15 +55,15 @@ In this project, we aim to investigate the intricate relationship between differ
 > - **"Must complete #2":** Implementation and evaluation of logistic regression, Random Forest, SVM, XGBoost, and AdaBoost models in predicting COVID-19 outcomes.
 >   - After discussing with our TA (Thomas speaking to the TA), we felt that the right direction for our project was to refine our strongest models (Logistic Regression and Random Forest) and further analyze them regarding our findings. Originally, we had some initial approaches to SVM, XGBoost, and AdaBoost but they severely lacked any key findings, comprehensive analysis or good baseline performance evaluations. We felt that we should prioritize quality over quantity when it came to our models where we'd fare better focusing on improving our existing models vs. opting to simply introduce new models without the proper ML pipeline. One of the key weaknesses of the paper that introduced our idea of using ML for Covid was this shortcoming where they did not consider a large dataset, comprehensive evluation metrics or extensive optimization techniques.
 > 
-> 3. **"Must complete #3":** Data visualization of COVID-19 trends over time using matplotlib and seaborn libraries.
-> 
-> 4. **"Must complete #4":** Documentation of model performance metrics and findings in a detailed report.
 
 
 ### Uncompleted Deliverables
-1. "Expect to complete #2": we decided to use an existing implementation for our SVM
+1. "Would like to accomplish #1": Expansion of predictive modeling to allow for datasets with different parameters. This can be achieved through creating a much more complex data structure
+    - Did not have the time/capacity to incorporate multiple datasets with different columns or to create a relational database unfortuantely.
 2. "Would like to accomplish #2": Collaboration with healthcare professionals (e.g., Johns Hopkins Medicine) for model validation and refinement alongside medical expertise that may be of significance for our findings. In addition to healthcare professionals, outreach to the authors that inspired our project topic (cited as [1]) to discuss our findings and methodologies.
+    - We require much more testing, model-tuning, different datasets, and comparative tests with multiple scientific paper results before this!
 3. "Would like to accomplish #3": Submit research findings in a peer-reviewed journal and/or present them at relevant conferences and forums to share insights and contribute to the collective understanding of COVID-19 dynamics.
+    - (Same as before) We require much more testing, model-tuning, different datasets, and comparative tests with multiple scientific paper results before this!
 
 ### Completed Deliverables
 1. "Must complete #1": Development of a data preprocessing pipeline tailored to the CDC COVID-19 dataset.
