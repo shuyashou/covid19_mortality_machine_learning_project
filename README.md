@@ -71,9 +71,12 @@ In this project, we aim to investigate the intricate relationship between differ
 2. "Must complete #2": Implementation and evaluation of logistic regression, Random Forest, SVM, XGBoost, and AdaBoost models in predicting COVID-19 outcomes.
     - Within the "Logistic Regression" and "Random Forest" section of final_report.ipynb
 3. "Must complete #3": Analysis of our various models, and their results in identifying the key contributors to mortality due to Covid-19.
-    - Within the latter sections of "Logistic Regression" and "Random Forest", and "Insights and Recommendations".
+    - Within the latter sections of "Logistic Regression" and "Random Forest", and "Insights and Recommendations"
 4. "Expect to accomplish #1": Explore techniques such as SHAP (SHapley Additive exPlanations) values, partial dependence plots, and permutation importance to gain deeper understanding of feature contributions.
-5. "Expect to accomplish #3": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
+    - With the graphics available in sections of "Logistic Regression" and "Random Forest"
+5. "Expect to accomplish #2": Enhancement of model accuracy through hyperparameter optimization and cross-validation techniques.
+    - Shown in latter sections of "Logistic Regression" and "Random Forest"
+6. "Expect to accomplish #3": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
     - [Model Prediction Interface](https://cs475project-c17babadc414.herokuapp.com/)
     - Note if clicking the above hyperlink doesn't work, the URL is as follows: <https://cs475project-c17babadc414.herokuapp.com/>
 
