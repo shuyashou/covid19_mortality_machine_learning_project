@@ -11,7 +11,7 @@ If you spent substantial time on any aspects that weren't deliverables in your p
 > **Deliverables Adjustments:**
 > 
 > - **"Must complete #2":** Implementation and evaluation of logistic regression, Random Forest, SVM, XGBoost, and AdaBoost models in predicting COVID-19 outcomes.
->   - After discussing with our TA, 
+>   - After discussing with our TA (Thomas speaking to the TA), we felt that the right direction for our project was to refine our strongest models (Logistic Regression and Random Forest) and further analyze them regarding our findings. Originally, we had some initial approaches to SVM, XGBoost, and AdaBoost but they severely lacked any key findings, comprehensive analysis or good baseline performance evaluations. We felt that we should prioritize quality over quantity when it came to our models where we'd fare better focusing on improving our existing models vs. opting to simply introduce new models without the proper ML pipeline. One of the key weaknesses of the paper that introduced our idea of using ML for Covid was this shortcoming where they did not consider a large dataset, comprehensive evluation metrics or extensive optimization techniques.
 > 
 > 3. **"Must complete #3":** Data visualization of COVID-19 trends over time using matplotlib and seaborn libraries.
 > 
@@ -25,11 +25,12 @@ If you spent substantial time on any aspects that weren't deliverables in your p
 
 ### Completed Deliverables
 1. "Must complete #1": Development of a data preprocessing pipeline tailored to the CDC COVID-19 dataset.
-2. "Must complete #2": Implementation and evaluation of logistic regression, Random Forest, SVM, XGBoost, and AdaBoost models in predicting COVID-19 outcomes.
-3. "Must complete #3": Analysis of our various models, and their results in identifying the key contributors to mortality due to Covid-19.
-4. "Expect to accomplish": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
-5. "Expect to accomplish #1": Explore techniques such as SHAP (SHapley Additive exPlanations) values, partial dependence plots, and permutation importance to gain deeper understanding of feature contributions.
-6. "Expect to accomplish #3": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
+    - Within the "Data Cleaning and Preprocessing" section of final_report.ipynb
+3. "Must complete #2": Implementation and evaluation of logistic regression, Random Forest, SVM, XGBoost, and AdaBoost models in predicting COVID-19 outcomes.
+4. "Must complete #3": Analysis of our various models, and their results in identifying the key contributors to mortality due to Covid-19.
+5. "Expect to accomplish": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
+6. "Expect to accomplish #1": Explore techniques such as SHAP (SHapley Additive exPlanations) values, partial dependence plots, and permutation importance to gain deeper understanding of feature contributions.
+7. "Expect to accomplish #3": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
 
 
 ### Additional Deliverables
