@@ -32,6 +32,7 @@ If you spent substantial time on any aspects that weren't deliverables in your p
     - Within the latter sections of "Logistic Regression" and "Random Forest", and "Insights and Recommendations".
 4. "Expect to accomplish": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
     - [Model Prediction Interface](https://cs475project-c17babadc414.herokuapp.com/)
+    - Note if clicking the above hyperlink doesn't work, the URL is as follows: <https://cs475project-c17babadc414.herokuapp.com/>
 8. "Expect to accomplish #1": Explore techniques such as SHAP (SHapley Additive exPlanations) values, partial dependence plots, and permutation importance to gain deeper understanding of feature contributions.
 9. "Expect to accomplish #3": Creation of a user-friendly interface for real-time prediction of COVID-19 outcomes based on patient data. This user-friendly interface could be accessible via website.
 
